@@ -1,0 +1,29 @@
+/* PHASE 6: Sidebar */
+
+.profile-picture {
+  display: block;
+  position: relative;
+  margin-top: -120px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: black;
+}
+
+
+.profile-info {
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.profile-nav {
+    margin: 20px;
+}
+
+.profile-nav > li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+.profile-nav > li {
+    border-bottom: 1px solid #ccc;
+}
