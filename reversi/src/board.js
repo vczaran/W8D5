@@ -10,7 +10,12 @@ if (typeof window === 'undefined'){
  * and two white pieces at [3, 3] and [4, 4].
  */
 function _makeGrid() {
-}
+   this.rows = Array.from({length: 8}, function() {
+    return Array.from({length: 8}, function() {
+    });
+  });
+
+};
 
 /**
  * Constructs a Board with a starting grid set up.
@@ -29,6 +34,7 @@ Board.DIRS = [
  * Checks if a given position is on the Board.
  */
 Board.prototype.isValidPos = function (pos) {
+  return Board.DIRS.includes(pos);
 };
 
 /**
@@ -36,6 +42,9 @@ Board.prototype.isValidPos = function (pos) {
  * throwing an Error if the position is invalid.
  */
 Board.prototype.getPiece = function (pos) {
+  if (this.isValidPos(pos)) {
+    return 
+  }
 };
 
 /**
